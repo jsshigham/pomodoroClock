@@ -59,7 +59,7 @@ const App = () => {
   };
 
   const changeTime = (amount, type) => {
-    if (type == "break") {
+    if (type === "break") {
       if ((breakAmount <= 60 && amount < 0) || breakAmount >= 60 * 60) {
         return;
       }
